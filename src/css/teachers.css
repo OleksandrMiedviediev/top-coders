@@ -1,0 +1,144 @@
+.teachers-container{
+  margin-bottom: 80px;
+}
+.title-teachers{
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.13;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #121417;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 335px;
+  margin-bottom: 16px;
+}
+.text-teachers{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: rgba(18, 20, 23, 0.5);
+  margin: 0 auto;
+  width: 100%;
+  max-width: 335px;
+  margin-bottom: 40px;
+}
+.title-accent {
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+}
+
+.title-accent::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0.1em;
+  width: 100%;
+  height: 12px;
+  border-radius: 8px;
+  background-color: #bee8cc;
+  z-index: -1;
+}
+.list-teachers{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.teacher-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 335px;
+  margin-bottom: 40px;
+}
+
+.teacher-card:last-child{
+  margin-bottom: 0;
+}
+.img-teachers{
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+.title-list{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #121417;
+  margin-bottom: 8px;
+}
+.text-list{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: rgba(18, 20, 23, 0.5);
+  width: 100%;
+}
+
+@media only screen and (min-width: 375px){
+  .title-teachers,
+  .text-teachers,
+  .teacher-card{
+    width: 335px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .teachers-container{
+    margin-bottom: 100px;
+  }
+  .title-teachers{
+    font-size: 40px;
+    line-height: 1.2;
+    width: 709px;
+    max-width: none;
+  }
+  .text-teachers{
+    font-size: 18px;
+    line-height: 1.67;
+    width: 709px;
+    max-width: none;
+    margin-bottom: 64px;
+  }
+  .list-teachers{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+  .teacher-card{
+    width: 272px;
+    max-width: none;
+    margin-bottom: 0;
+  }
+  .text-list{
+    font-size: 16px;
+    line-height: 1.5;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1280px){
+  .teachers-container{
+    margin-bottom: 150px;
+  }
+  .title-teachers{
+    width: 832px;
+  }
+  .text-teachers{
+    width: 709px;
+  }
+  .teacher-card{
+    width: 232px;
+  }
+}
