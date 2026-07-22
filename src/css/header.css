@@ -1,0 +1,150 @@
+.header {
+  padding-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    padding-bottom: 16px;
+  }
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+  color: #121417;
+  padding: 20px 0;
+}
+
+.logo-part {
+  color: #4dc274;
+}
+
+.nav {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .nav {
+    display: block;
+  }
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link {
+  position: relative;
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28571;
+  color: #121417;
+  padding: 33px 0;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 28px;
+  width: 37px;
+  height: 2px;
+  background-color: #4dc274;
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+  opacity: 1;
+}
+
+.social-list {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .social-list {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  border-radius: 10px;
+  padding: 8px;
+  width: 44px;
+  height: 44px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover,
+.social-link:focus {
+  border-color: rgba(77, 194, 116, 0.1);
+}
+
+.social-icon {
+  fill: #121417;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: #4dc274;
+}
+
+.burger {
+  background-color: inherit;
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .burger {
+    width: 40px;
+    height: 28px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .burger {
+    display: none;
+  }
+}
+
+.burger-icon {
+  width: 28px;
+  height: 17px;
+  fill: #121417;
+}
+
+@media screen and (min-width: 768px) {
+  .burger-icon {
+    width: 34px;
+    height: 17px;
+  }
+}
