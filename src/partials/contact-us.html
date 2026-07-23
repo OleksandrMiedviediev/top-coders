@@ -21,6 +21,8 @@
             alt="Girl studying English online with headphones"
             width="492"
             height="392"
+            loading="lazy"
+            decoding="async"
           />
         </picture>
         <div class="contact-us-promo-content">
@@ -35,35 +37,43 @@
 
       <form class="contact-us-form" name="contact-form">
         <div class="contact-us-fields">
+          <label class="visually-hidden" for="contact-name">Name</label>
           <input
             class="contact-us-input"
             type="text"
+            id="contact-name"
             name="name"
             placeholder="Name"
-            pattern="[A-Za-zА-Яа-яІіЇїЄєҐґ'\\s-]{2,}"
+            pattern="[A-Za-zА-Яа-яІіЇїЄєҐґ'\s-]{2,}"
             title="Enter at least 2 letters"
             required
           />
+          <label class="visually-hidden" for="contact-email">Email</label>
           <input
             class="contact-us-input"
             type="email"
+            id="contact-email"
             name="email"
             placeholder="Email"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-            title="Enter a valid email"
+            pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,8}"
+            title="Enter a valid email, e.g. name@example.com"
             required
           />
+          <label class="visually-hidden" for="contact-phone">Phone</label>
           <input
             class="contact-us-input"
             type="tel"
+            id="contact-phone"
             name="phone"
             placeholder="Phone"
             pattern="^\+\d{2}\(\d{3}\)\d{3}-\d{2}-\d{2}$"
             title="Format: +38(000)000-00-00"
             required
           />
+          <label class="visually-hidden" for="contact-comment">Comment</label>
           <textarea
             class="contact-us-textarea"
+            id="contact-comment"
             name="comment"
             placeholder="Comment"
             rows="4"
