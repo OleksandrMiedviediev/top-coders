@@ -1,0 +1,275 @@
+/* Common ---------------------------- */
+
+:root {
+  /* Colors */
+  --color-text: #121417;
+  --color-muted: rgba(18, 20, 23, 0.5);
+  --color-num: rgba(18, 20, 23, 0.35);
+  --color-border: rgba(18, 20, 23, 0.1);
+  --color-green: #4dc274;
+  --color-green-dark: #3aa85f;
+  --color-green-light: #bee8cc;
+  --color-gray: #f3f5f6;
+  --color-white: #ffffff;
+  --color-on-green: rgba(255, 255, 255, 0.75);
+
+  /* Gradients */
+  --gradient-green: linear-gradient(
+    82deg,
+    var(--color-green) 4%,
+    var(--color-green-light) 130%
+  );
+
+  /* Geometry */
+  --radius: 30px;
+  --radius-sm: 12px;
+
+  /* Motion */
+  --transition: 0.2s ease;
+  --transition-slow: 0.32s ease;
+
+  /* Fonts */
+  --font-family: 'Manrope', sans-serif;
+  --letter-spacing: -0.02em;
+
+  color: var(--color-text);
+  background-color: var(--color-white);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  color: var(--color-text);
+  background-color: var(--color-white);
+}
+
+.section-header {
+  max-width: 720px;
+  margin: 0 auto 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section-header-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.125;
+  letter-spacing: var(--letter-spacing);
+}
+
+.section-header-text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--color-muted);
+}
+
+.highlight {
+  position: relative;
+  z-index: 0;
+}
+
+.highlight::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -1px;
+  right: -1px;
+  bottom: 2px;
+  height: 12px;
+  background: var(--color-green-light);
+  border-radius: 8px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-green);
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  transition:
+    background var(--transition),
+    color var(--transition),
+    box-shadow var(--transition);
+}
+
+.btn:hover {
+  background: var(--color-green-dark);
+  color: var(--color-white);
+}
+
+@media only screen and (min-width: 768px) {
+  .section-header {
+    margin-bottom: 64px;
+  }
+
+  .section-header-title {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .highlight::before {
+    bottom: 0;
+    height: 20px;
+  }
+
+  .section-header-text {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  .btn {
+    font-size: 18px;
+    line-height: 1.55;
+    padding: 16px;
+  }
+}
+
+/* Common ---------------------------- */
+
+.lessons {
+  padding-top: 80px;
+}
+
+.lessons-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.lesson-card {
+  flex: 0 1 100%;
+  max-width: 100%;
+  border-radius: var(--radius);
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: var(--color-white);
+  box-shadow: inset 0 0 0 1px var(--color-green);
+}
+
+.lesson-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.lesson-price {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.125;
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
+}
+
+.lesson-text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--color-muted);
+  margin-bottom: 20px;
+}
+
+.lesson-btn {
+  margin-top: auto;
+  align-self: stretch;
+}
+
+.lesson-featured {
+  background: var(--color-green);
+  color: var(--color-white);
+  box-shadow: none;
+}
+
+.lesson-featured .lesson-text {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.lesson-featured .lesson-btn {
+  background: var(--color-green);
+  color: var(--color-white);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+.lesson-featured .lesson-btn:hover {
+  background: var(--color-white);
+  color: var(--color-green);
+  box-shadow: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .lessons {
+    padding-top: 95px;
+  }
+
+  .lessons-list {
+    justify-content: start;
+    gap: 32px;
+  }
+
+  .lesson-card {
+    max-width: calc(50% - 16px);
+    padding: 32px 16px;
+  }
+
+  .lesson-price {
+    line-height: 1.375;
+    margin-bottom: 32px;
+  }
+
+  .lesson-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .lessons {
+    padding-top: 150px;
+  }
+
+  .lesson-card {
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: none;
+    padding: 32px;
+  }
+
+  .lesson-text {
+    margin-bottom: 32px;
+  }
+}
