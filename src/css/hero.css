@@ -1,30 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-
 .hero-section {
   padding: 120px 0 80px;
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(46, 47, 66, 0.7) 0%,
+      rgba(46, 47, 66, 0.7) 100%
+    ),
+    url('/src/images/hero/hero-illustration.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #fff;
   font-family: 'Manrope', sans-serif;
   position: relative;
   overflow: hidden;
-}
-
-/* ===== КАРТИНКА ЯК ФОН ===== */
-.hero-section::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 100%;
-  background-image: url('/src/images/hero/hero-illustration.jpg');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.4;
-  z-index: 0;
 }
 
 .hero-container {
@@ -88,58 +80,48 @@
   50% { transform: translateX(-50%) translateY(-15px); }
 }
 
-/* ===== АДАПТИВ ===== */
-
-@media (max-width: 768px) {
+/* Tablet (768px) */
+@media (min-width: 768px) {
   .hero-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 40px;
+    flex-direction: row;
+    text-align: left;
+    gap: 60px;
   }
 
   .hero-content {
-    max-width: 100%;
+    max-width: 600px;
   }
 
   .hero-title {
-    font-size: 36px;
+    font-size: 48px;
   }
 
-  .hero-section::after {
-    width: 100%;
-    opacity: 0.2;
-  }
-
-  .scroll-down {
-    bottom: 20px;
-  }
-
-  .btn {
-    padding: 14px 36px;
-    font-size: 16px;
+  .hero-section {
+    padding: 120px 0 80px;
   }
 }
 
-@media (max-width: 375px) {
-  .hero-section {
-    padding: 100px 0 60px;
-  }
-
+/* Desktop (1280px) */
+@media (min-width: 1280px) {
   .hero-title {
-    font-size: 28px;
+    font-size: 64px;
   }
 
   .btn {
-    padding: 12px 32px;
-    font-size: 15px;
+    padding: 16px 48px;
+    font-size: 18px;
   }
+}
 
-  .scroll-down svg {
-    width: 32px;
-    height: 32px;
-  }
-
-  .hero-section::after {
-    opacity: 0.15;
+/* Retina (2x) */
+@media (min-resolution: 192dpi) {
+  .hero-section {
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(46, 47, 66, 0.7) 0%,
+        rgba(46, 47, 66, 0.7) 100%
+      ),
+      url('/src/images/hero/hero-illustration@2x.jpg');
   }
 }
