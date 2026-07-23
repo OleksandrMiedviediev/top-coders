@@ -9,7 +9,7 @@
       rgba(46, 47, 66, 0.7) 0%,
       rgba(46, 47, 66, 0.7) 100%
     ),
-    url('/src/images/hero/hero-illustration.jpg');
+    url('../images/hero/hero-illustration.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -80,40 +80,33 @@
   50% { transform: translateX(-50%) translateY(-15px); }
 }
 
-/* Tablet (768px) */
 @media (min-width: 768px) {
   .hero-container {
     flex-direction: row;
     text-align: left;
     gap: 60px;
   }
-
   .hero-content {
     max-width: 600px;
   }
-
   .hero-title {
     font-size: 48px;
   }
-
   .hero-section {
     padding: 120px 0 80px;
   }
 }
 
-/* Desktop (1280px) */
 @media (min-width: 1280px) {
   .hero-title {
     font-size: 64px;
   }
-
   .btn {
     padding: 16px 48px;
     font-size: 18px;
   }
 }
 
-/* Retina (2x) */
 @media (min-resolution: 192dpi) {
   .hero-section {
     background-image:
@@ -122,6 +115,6 @@
         rgba(46, 47, 66, 0.7) 0%,
         rgba(46, 47, 66, 0.7) 100%
       ),
-      url('/src/images/hero/hero-illustration@2x.jpg');
+      url('../images/hero/hero-illustration@2x.jpg');
   }
 }
