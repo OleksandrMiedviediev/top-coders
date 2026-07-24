@@ -13,7 +13,7 @@
   position: relative;
   z-index: 0;
   margin-bottom: 16px;
-  color: #121417;
+  color: var(--color-text);
   font-size: 32px;
   line-height: 1.13;
   letter-spacing: -0.02em;
@@ -31,8 +31,8 @@
   bottom: 2px;
   width: 100%;
   height: 12px;
-  border-radius: 8px;
-  background-color: #bee8cc;
+  border-radius: var(--radius-soft);
+  background-color: var(--color-green-light);
   content: '';
 }
 
@@ -63,8 +63,8 @@
   height: 100%;
   min-height: 278px;
   padding: 20px 20px 40px;
-  border-radius: 16px;
-  background-color: #f3f5f6;
+  border-radius: var(--radius-card);
+  background-color: var(--color-gray);
 }
 
 .review-student {
@@ -73,28 +73,28 @@
   gap: 8px;
   margin-bottom: 20px;
   padding: 14px;
-  border-radius: 8px;
-  background-color: #4dc274;
+  border-radius: var(--radius-soft);
+  background-color: var(--color-green);
 }
 
 .review-avatar {
   width: 50px;
   height: 50px;
   flex-shrink: 0;
-  border-radius: 50%;
+  border-radius: var(--radius-round);
   object-fit: cover;
 }
 
 .review-name {
   margin-bottom: 2px;
-  color: #ffffff;
+  color: var(--color-white);
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.02em;
 }
 
 .review-role {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--color-on-white-faint);
   font-size: 12px;
   font-weight: 400;
   line-height: 1.33;
@@ -133,7 +133,7 @@
   .review-card {
     min-height: 326px;
     padding: 32px 16px 40px;
-    border-radius: 30px;
+    border-radius: var(--radius);
   }
 
   .review-student {

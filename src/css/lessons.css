@@ -1,65 +1,3 @@
-/* Common ---------------------------- */
-
-:root {
-  /* Colors */
-  --color-text: #121417;
-  --color-muted: rgba(18, 20, 23, 0.5);
-  --color-num: rgba(18, 20, 23, 0.35);
-  --color-border: rgba(18, 20, 23, 0.1);
-  --color-green: #4dc274;
-  --color-green-dark: #3aa85f;
-  --color-green-light: #bee8cc;
-  --color-gray: #f3f5f6;
-  --color-white: #ffffff;
-  --color-on-green: rgba(255, 255, 255, 0.75);
-
-  /* Gradients */
-  --gradient-green: linear-gradient(
-    82deg,
-    var(--color-green) 4%,
-    var(--color-green-light) 130%
-  );
-
-  /* Geometry */
-  --radius: 30px;
-  --radius-sm: 12px;
-
-  /* Motion */
-  --transition: 0.2s ease;
-  --transition-slow: 0.32s ease;
-
-  /* Fonts */
-  --font-family: 'Manrope', sans-serif;
-  --letter-spacing: -0.02em;
-
-  color: var(--color-text);
-  background-color: var(--color-white);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: var(--font-family);
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  display: flex;
-  flex-direction: column;
-  min-width: 100vw;
-  min-height: 100vh;
-  margin: 0;
-  color: var(--color-text);
-  background-color: var(--color-white);
-}
-
 .section-header {
   max-width: 720px;
   margin: 0 auto 40px;
@@ -210,13 +148,13 @@ body {
 }
 
 .lesson-featured .lesson-text {
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--color-on-green-strong);
 }
 
 .lesson-featured .lesson-btn {
   background: var(--color-green);
   color: var(--color-white);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+  box-shadow: inset 0 0 0 1px var(--color-on-white-soft);
 }
 
 .lesson-featured .lesson-btn:hover {

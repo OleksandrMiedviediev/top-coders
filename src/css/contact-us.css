@@ -18,13 +18,17 @@
   line-height: 1.12;
   letter-spacing: -0.02em;
   text-align: center;
-  color: #121417;
+  color: var(--color-text);
 }
 
 .contact-us-title-accent {
   display: inline;
   border-radius: 8px;
-  background: linear-gradient(180deg, transparent 62%, #bee8cc 62%);
+  background: linear-gradient(
+    180deg,
+    transparent 62%,
+    var(--color-green-light) 62%
+  );
 }
 
 .contact-us-text {
@@ -34,7 +38,7 @@
   font-size: 14px;
   line-height: 1.71;
   text-align: center;
-  color: rgba(18, 20, 23, 0.5);
+  color: var(--color-muted);
 }
 
 .contact-us-promo {
@@ -52,25 +56,25 @@
 .contact-us-textarea {
   width: 100%;
   padding: 16px 18px;
-  border: 1px solid rgba(18, 20, 23, 0.1);
-  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
   outline: none;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
-  color: #121417;
+  color: var(--color-text);
   background-color: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--transition-base);
 }
 
 .contact-us-input::placeholder,
 .contact-us-textarea::placeholder {
-  color: rgba(18, 20, 23, 0.5);
+  color: var(--color-muted);
 }
 
 .contact-us-input:focus,
 .contact-us-textarea:focus {
-  border-color: #4dc274;
+  border-color: var(--color-green);
 }
 
 .contact-us-textarea {
@@ -91,7 +95,7 @@
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: -0.02em;
-  color: #121417;
+  color: var(--color-text);
 }
 
 .contact-us-teachers-list {
@@ -123,7 +127,7 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: -0.02em;
-  color: #121417;
+  color: var(--color-text);
   cursor: pointer;
 }
 
@@ -134,11 +138,11 @@
   left: 0;
   width: 20px;
   height: 20px;
-  border: 2px solid rgba(18, 20, 23, 0.2);
-  border-radius: 50%;
+  border: 2px solid var(--color-border-strong);
+  border-radius: var(--radius-round);
   box-sizing: border-box;
   transform: translateY(-50%);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--transition-base);
 }
 
 .contact-us-radio-label::after {
@@ -148,17 +152,17 @@
   left: 10px;
   width: 10px;
   height: 10px;
-  border-radius: 50%;
-  background-color: #4dc274;
+  border-radius: var(--radius-round);
+  background-color: var(--color-green);
   opacity: 0;
   transform: translate(-50%, -50%) scale(0);
   transition:
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity var(--transition-base),
+    transform var(--transition-base);
 }
 
 .contact-us-radio:checked + .contact-us-radio-label::before {
-  border-color: #4dc274;
+  border-color: var(--color-green);
 }
 
 .contact-us-radio:checked + .contact-us-radio-label::after {
@@ -172,25 +176,25 @@
   margin-bottom: 16px;
   padding: 14px 0;
   border: none;
-  border-radius: 12px;
-  background-color: #4dc274;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-green);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.71;
-  color: #fff;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--color-white);
+  transition: background-color var(--transition-base);
 }
 
 .contact-us-btn:hover,
 .contact-us-btn:focus {
-  background-color: #38ae5f;
+  background-color: var(--color-green-hover);
 }
 
 .contact-us-policy {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.33;
-  color: rgba(18, 20, 23, 0.5);
+  color: var(--color-muted);
 }
 
 .contact-us-policy-link {
@@ -279,7 +283,7 @@
     height: 578px;
     overflow: hidden;
     border-radius: 30px;
-    background-color: #4dc274;
+    background-color: var(--color-green);
   }
 
   .contact-us-promo-thumb {
@@ -312,14 +316,14 @@
     font-size: 40px;
     line-height: 1.2;
     letter-spacing: -0.02em;
-    color: #fff;
+    color: var(--color-white);
   }
 
   .contact-us-promo-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--color-on-white-subtle);
   }
 
   .contact-us-form {
