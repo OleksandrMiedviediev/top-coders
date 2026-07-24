@@ -179,9 +179,10 @@
   }
 
   .proposal-card {
-    width: calc(100% - 120px);
+    width: calc(100% - 10px);
     min-height: 248px;
     padding: 68px 220px 30px 26px;
+    top: 50px;
   }
 
   .proposal-card-title {
@@ -211,7 +212,7 @@
   .proposal-books {
     display: block;
     right: 24px;
-    top: 50%;
+    top: 80%;
     width: 172px;
     height: 214px;
     transform: translateY(-50%);
