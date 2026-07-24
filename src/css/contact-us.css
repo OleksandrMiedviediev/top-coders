@@ -23,6 +23,7 @@
 
 .contact-us-title-accent {
   display: inline;
+  border-radius: 8px;
   background: linear-gradient(180deg, transparent 62%, #bee8cc 62%);
 }
 
