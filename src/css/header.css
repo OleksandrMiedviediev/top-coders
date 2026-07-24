@@ -1,0 +1,150 @@
+.header {
+  padding-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    padding-bottom: 16px;
+  }
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--color-text);
+  padding: 20px 0;
+}
+
+.logo-part {
+  color: var(--color-green);
+}
+
+.nav {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .nav {
+    display: block;
+  }
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link {
+  position: relative;
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28571;
+  color: var(--color-text);
+  padding: 33px 0;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 28px;
+  width: 37px;
+  height: 2px;
+  background-color: var(--color-green);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+  opacity: 1;
+}
+
+.social-list {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .social-list {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-chip);
+  padding: 8px;
+  width: 44px;
+  height: 44px;
+  transition: border-color var(--transition-base);
+}
+
+.social-link:hover,
+.social-link:focus {
+  border-color: var(--color-green-soft);
+}
+
+.social-icon {
+  fill: var(--color-text);
+  transition: fill var(--transition-base);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--color-green);
+}
+
+.burger {
+  background-color: inherit;
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .burger {
+    width: 40px;
+    height: 28px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .burger {
+    display: none;
+  }
+}
+
+.burger-icon {
+  width: 28px;
+  height: 17px;
+  fill: var(--color-text);
+}
+
+@media screen and (min-width: 768px) {
+  .burger-icon {
+    width: 34px;
+    height: 17px;
+  }
+}

@@ -1,0 +1,282 @@
+.proposal-shell {
+  position: relative;
+  isolation: isolate;
+  overflow: visible;
+  border-radius: var(--radius-lg);
+  padding: 40px 16px 20px;
+  background: linear-gradient(
+    102deg,
+    var(--color-green) 2%,
+    var(--color-green-light) 100%
+  );
+  height: 700px;
+}
+
+.proposal-shell::before,
+.proposal-shell::after {
+  content: none;
+}
+
+.proposal-title {
+  position: relative;
+  margin: 0 0 34px;
+  max-width: 300px;
+  color: var(--color-white);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.proposal-title-accent {
+  color: var(--color-green-accent);
+}
+
+.proposal-card-wrap {
+  position: relative;
+  z-index: 2;
+  min-height: 332px;
+}
+
+.proposal-cards-bg {
+  position: absolute;
+  left: 50%;
+  top: calc(50% + 30px);
+  width: 335px;
+  transform: translate(-50%, -48%);
+}
+
+.proposal-cards-bg img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.proposal-card {
+  position: relative;
+  border-radius: var(--radius-card);
+  padding: 18px;
+  margin-top: 50px;
+}
+
+.proposal-card-title {
+  margin: 0 0 18px;
+  color: var(--color-text);
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.proposal-list {
+  margin: 30px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.proposal-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin-bottom: 7px;
+  max-width: 208px;
+  color: var(--color-text);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.proposal-item:last-child {
+  margin-bottom: 18px;
+}
+
+.proposal-item-icon {
+  flex: 0 0 20px;
+  box-sizing: border-box;
+  padding: 4px;
+  border-radius: var(--radius-round);
+  background-color: var(--color-green);
+  fill: var(--color-white);
+}
+
+.proposal-item-text {
+  display: block;
+}
+
+.proposal-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 0;
+  height: 52px;
+  border-radius: var(--radius-sm);
+  padding: 0 14px;
+  background-color: var(--color-green);
+  color: var(--color-white);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: background-color var(--transition-base);
+}
+
+.proposal-btn:hover,
+.proposal-btn:focus {
+  background-color: var(--color-green-hover);
+}
+
+.proposal-books {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  z-index: 3;
+  margin: 0;
+  width: 88px;
+  height: 112px;
+  transform: translateY(-32%);
+  object-fit: contain;
+}
+
+@media only screen and (min-width: 375px) {
+  .proposal-shell {
+    padding: 40px 24px 20px;
+  }
+
+  .proposal-books {
+    right: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-shell {
+    border-radius: 24px;
+    padding: 58px 32px 32px;
+    height: 950px;
+  }
+
+  .proposal-card-wrap {
+    min-height: 402px;
+  }
+
+  .proposal-cards-bg {
+    top: calc(50% + 60px);
+    width: 755px;
+    height: 615px;
+    transform: translate(-50%, -46%);
+  }
+
+  .proposal-title {
+    margin-bottom: 30px;
+    max-width: 640px;
+    font-size: 58px;
+    line-height: 1;
+  }
+
+  .proposal-card {
+    min-height: 248px;
+    padding: 68px 220px 30px 26px;
+    top: 50px;
+  }
+
+  .proposal-card-title {
+    font-size: 40px;
+  }
+
+  .proposal-item {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.35;
+    max-width: 300px;
+  }
+
+  .proposal-item:last-child {
+    margin-bottom: 20px;
+  }
+
+  .proposal-btn {
+    width: auto;
+    min-width: 150px;
+  }
+
+  .proposal-books {
+    display: block;
+    right: 24px;
+    top: 80%;
+    width: 172px;
+    height: 214px;
+    transform: translateY(-50%);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .proposal-shell {
+    border-radius: var(--radius);
+    height: 900px;
+    background: transparent;
+  }
+
+  .proposal-shell::before {
+    content: '';
+    position: absolute;
+    inset: 0 -128px;
+    border-radius: var(--radius);
+    background: linear-gradient(
+      84.6deg,
+      var(--color-green) 11.41%,
+      var(--color-green-light) 122.11%
+    );
+    margin: 0 50px;
+  }
+
+  .proposal-title {
+    max-width: 640px;
+    margin-bottom: 30px;
+    font-size: 48px;
+    line-height: 1.08;
+  }
+
+  .proposal-cards-bg {
+    top: calc(50% + 30px);
+    width: 1104px;
+    height: 463px;
+    transform: translate(-50%, -47%);
+  }
+
+  .proposal-card {
+    top: 80px;
+  }
+
+  .proposal-card-title {
+    margin-bottom: 16px;
+    font-size: 40px;
+    line-height: 1.15;
+  }
+
+  .proposal-list {
+    max-width: 654px;
+  }
+
+  .proposal-item {
+    margin-bottom: 15px;
+    max-width: 654px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -2%;
+  }
+
+  .proposal-btn {
+    min-width: 165px;
+    padding: 12px 18px;
+    font-size: 13px;
+  }
+
+  .proposal-books {
+    right: -7px;
+    width: 214px;
+    height: 263px;
+    top: 78%;
+  }
+}

@@ -1,0 +1,147 @@
+<section class="section contact-us" id="contact-us">
+  <span id="leave-application" class="visually-hidden" aria-hidden="true"
+    >Leave application anchor</span
+  >
+  <div class="container">
+    <h2 class="contact-us-title">
+      Leave an <span class="contact-us-title-accent">application</span>
+    </h2>
+    <p class="contact-us-text">
+      Please use the form below to contact us. Enter your name, email, and
+      message and we'll get back to you shortly.
+    </p>
+
+    <div class="contact-us-wrapper">
+      <div class="contact-us-promo">
+        <picture class="contact-us-promo-thumb">
+          <img
+            class="contact-us-promo-img"
+            src="./images/contact-us.jpg"
+            srcset="./images/contact-us.jpg 1x, ./images/contact-us-2x.jpg 2x"
+            alt="Girl studying English online with headphones"
+            width="492"
+            height="392"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
+        <div class="contact-us-promo-content">
+          <p class="contact-us-promo-number">1000</p>
+          <p class="contact-us-promo-text">
+            of our online English language lessons! This journey has been full
+            of discovery, growth and unforgettable moments, and we are happy to
+            share this joyful event with you.
+          </p>
+        </div>
+      </div>
+
+      <form class="contact-us-form" name="contact-form">
+        <div class="contact-us-fields">
+          <label class="visually-hidden" for="contact-name">Name</label>
+          <input
+            class="contact-us-input"
+            type="text"
+            id="contact-name"
+            name="name"
+            placeholder="Name"
+            pattern="[A-Za-zА-Яа-яІіЇїЄєҐґ'\s-]{2,}"
+            title="Enter at least 2 letters"
+            required
+          />
+          <label class="visually-hidden" for="contact-email">Email</label>
+          <input
+            class="contact-us-input"
+            type="email"
+            id="contact-email"
+            name="email"
+            placeholder="Email"
+            pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,8}"
+            title="Enter a valid email, e.g. name@example.com"
+            required
+          />
+          <label class="visually-hidden" for="contact-phone">Phone</label>
+          <input
+            class="contact-us-input"
+            type="tel"
+            id="contact-phone"
+            name="phone"
+            placeholder="Phone"
+            pattern="^\+\d{2}\(\d{3}\)\d{3}-\d{2}-\d{2}$"
+            title="Format: +38(000)000-00-00"
+            required
+          />
+          <label class="visually-hidden" for="contact-comment">Comment</label>
+          <textarea
+            class="contact-us-textarea"
+            id="contact-comment"
+            name="comment"
+            placeholder="Comment"
+            rows="4"
+          ></textarea>
+        </div>
+
+        <fieldset class="contact-us-teachers">
+          <legend class="contact-us-teachers-title">Choose a teacher</legend>
+          <ul class="contact-us-teachers-list">
+            <li class="contact-us-teachers-item">
+              <input
+                class="contact-us-radio"
+                type="radio"
+                name="teacher"
+                id="teacher-maria"
+                value="maria"
+                checked
+              />
+              <label class="contact-us-radio-label" for="teacher-maria"
+                >Maria</label
+              >
+            </li>
+            <li class="contact-us-teachers-item">
+              <input
+                class="contact-us-radio"
+                type="radio"
+                name="teacher"
+                id="teacher-artem"
+                value="artem"
+              />
+              <label class="contact-us-radio-label" for="teacher-artem"
+                >Artem</label
+              >
+            </li>
+            <li class="contact-us-teachers-item">
+              <input
+                class="contact-us-radio"
+                type="radio"
+                name="teacher"
+                id="teacher-ilona"
+                value="ilona"
+              />
+              <label class="contact-us-radio-label" for="teacher-ilona"
+                >Ilona</label
+              >
+            </li>
+            <li class="contact-us-teachers-item">
+              <input
+                class="contact-us-radio"
+                type="radio"
+                name="teacher"
+                id="teacher-volodymyr"
+                value="volodymyr"
+              />
+              <label class="contact-us-radio-label" for="teacher-volodymyr"
+                >Volodymyr</label
+              >
+            </li>
+          </ul>
+        </fieldset>
+
+        <button class="contact-us-btn" type="submit">Send</button>
+        <p class="contact-us-policy">
+          By clicking on “Send” button, you agree to our
+          <a class="contact-us-policy-link" href="#">Privacy Policy</a>, and
+          allow Promodo to use this information for marketing purposes.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>

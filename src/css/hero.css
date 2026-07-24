@@ -1,0 +1,213 @@
+.hero-section {
+  padding-top: 0;
+}
+
+.hero-wrap {
+  display: flex;
+  padding-bottom: 72px;
+  max-width: 335px;
+  min-height: 709px;
+  margin: 0 auto;
+  border-radius: var(--radius-card);
+  background-image:
+    linear-gradient(
+      357.37deg,
+      var(--color-overlay) 29.98%,
+      rgba(0, 0, 0, 0) 64.31%
+    ),
+    url('../images/hero/hero-bg-mobile.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-resolution: 192dpi) {
+  .hero-wrap {
+    background-image:
+      linear-gradient(
+        357.37deg,
+        var(--color-overlay) 29.98%,
+        rgba(0, 0, 0, 0) 64.31%
+      ),
+      url('../images/hero/hero-bg-mobile@2x.jpg');
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-wrap {
+    max-width: 704px;
+    padding-top: 260px;
+    padding-bottom: 295px;
+    background-image:
+      linear-gradient(
+        95.97deg,
+        var(--color-overlay) 30.67%,
+        rgba(0, 0, 0, 0) 43.07%
+      ),
+      url('../images/hero/hero-bg-tablet.jpg');
+  }
+
+  @media (min-resolution: 192dpi) {
+    .hero-wrap {
+      background-image:
+        linear-gradient(
+          95.97deg,
+          var(--color-overlay) 30.67%,
+          rgba(0, 0, 0, 0) 43.07%
+        ),
+        url('../images/hero/hero-bg-tablet@2x.jpg');
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-wrap {
+    max-width: 1152px;
+    padding: 164px 0;
+    background-image:
+      linear-gradient(
+        95.97deg,
+        var(--color-overlay) 35.9%,
+        rgba(0, 0, 0, 0) 50.76%
+      ),
+      url('../images/hero/hero-bg-desktop.jpg');
+  }
+
+  @media (min-resolution: 192dpi) {
+    .hero-wrap {
+      background-image:
+        linear-gradient(
+          95.97deg,
+          var(--color-overlay) 35.9%,
+          rgba(0, 0, 0, 0) 50.76%
+        ),
+        url('../images/hero/hero-bg-desktop@2x.jpg');
+    }
+  }
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+@media (min-width: 1280px) {
+  .hero-container {
+    padding: 0 64px;
+  }
+}
+
+.hero-content {
+  margin-top: auto;
+}
+
+@media (min-width: 768px) {
+  .hero-content {
+    margin: 0;
+    max-width: 488px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-content {
+    max-width: 564px;
+  }
+}
+
+.hero-title {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.05263;
+  color: var(--color-white);
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 60px;
+    line-height: 1.16667;
+    margin-bottom: 32px;
+  }
+}
+
+.hero-title-part {
+  color: var(--color-green-light);
+}
+
+.hero-btn {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  padding: 20px 0;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-green);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71429;
+  color: var(--color-white);
+  transition: background-color var(--transition-base);
+}
+
+@media (min-width: 768px) {
+  .hero-btn {
+    max-width: 306px;
+    padding: 16px 64px;
+    font-size: 18px;
+    line-height: 1.55556;
+  }
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--color-green-hover);
+}
+
+.scroll-down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-round);
+  background-color: var(--color-white);
+  transition: background-color var(--transition-base);
+}
+
+@media (min-width: 768px) {
+  .scroll-down {
+    bottom: 32px;
+    right: 32px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.scroll-down-icon {
+  fill: var(--color-green);
+  width: 20px;
+  height: 20px;
+  transition: fill var(--transition-base);
+}
+
+@media (min-width: 768px) {
+  .scroll-down-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.scroll-down:hover,
+.scroll-down:focus {
+  background-color: var(--color-green);
+}
+
+.scroll-down:hover .scroll-down-icon,
+.scroll-down:focus .scroll-down-icon {
+  fill: var(--color-white);
+}
