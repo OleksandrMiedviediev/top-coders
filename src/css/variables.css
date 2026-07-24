@@ -1,0 +1,45 @@
+:root {
+  --color-text: #121417;
+  --color-muted: rgba(18, 20, 23, 0.5);
+  --color-num: rgba(18, 20, 23, 0.35);
+  --color-border: rgba(18, 20, 23, 0.1);
+  --color-border-strong: rgba(18, 20, 23, 0.2);
+  --color-overlay: rgba(18, 20, 23, 0.4);
+  --color-green: #4dc274;
+  --color-green-dark: #3aa85f;
+  --color-green-light: #bee8cc;
+  --color-green-accent: #dff8e8;
+  --color-green-hover: #38ae5f;
+  --color-gray: #f3f5f6;
+  --color-white: #ffffff;
+  --color-on-green: rgba(255, 255, 255, 0.75);
+  --color-on-white-soft: rgba(255, 255, 255, 0.6);
+  --color-on-white-faint: rgba(255, 255, 255, 0.5);
+  --color-on-white-subtle: rgba(255, 255, 255, 0.7);
+  --color-on-white-border: rgba(255, 255, 255, 0.1);
+  --color-on-white-border-strong: rgba(255, 255, 255, 0.4);
+  --color-green-soft: rgba(77, 194, 116, 0.1);
+  --color-on-green-strong: rgba(255, 255, 255, 0.85);
+
+  --gradient-green: linear-gradient(
+    82deg,
+    var(--color-green) 4%,
+    var(--color-green-light) 130%
+  );
+
+  --radius: 30px;
+  --radius-sm: 12px;
+  --radius-soft: 8px;
+  --radius-chip: 10px;
+  --radius-card: 16px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-round: 50%;
+
+  --transition: 0.2s ease;
+  --transition-slow: 0.32s ease;
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  --font-family: 'Manrope', sans-serif;
+  --letter-spacing: -0.02em;
+}

@@ -2,9 +2,13 @@
   position: relative;
   isolation: isolate;
   overflow: visible;
-  border-radius: 18px;
+  border-radius: var(--radius-lg);
   padding: 40px 16px 20px;
-  background: linear-gradient(102deg, #4dc274 2%, #bee8cc 100%);
+  background: linear-gradient(
+    102deg,
+    var(--color-green) 2%,
+    var(--color-green-light) 100%
+  );
   height: 700px;
 }
 
@@ -17,7 +21,7 @@
   position: relative;
   margin: 0 0 34px;
   max-width: 300px;
-  color: #ffffff;
+  color: var(--color-white);
   font-size: 38px;
   font-weight: 700;
   line-height: 1.05;
@@ -25,7 +29,7 @@
 }
 
 .proposal-title-accent {
-  color: #dff8e8;
+  color: var(--color-green-accent);
 }
 
 .proposal-card-wrap {
@@ -50,14 +54,14 @@
 
 .proposal-card {
   position: relative;
-  border-radius: 16px;
+  border-radius: var(--radius-card);
   padding: 18px;
   margin-top: 50px;
 }
 
 .proposal-card-title {
   margin: 0 0 18px;
-  color: #121417;
+  color: var(--color-text);
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: -0.02em;
@@ -76,7 +80,7 @@
   gap: 6px;
   margin-bottom: 7px;
   max-width: 208px;
-  color: #121417;
+  color: var(--color-text);
   font-size: 12px;
   font-weight: 500;
   line-height: 1.3;
@@ -90,9 +94,9 @@
   flex: 0 0 20px;
   box-sizing: border-box;
   padding: 4px;
-  border-radius: 50%;
-  background-color: #4dc274;
-  fill: #ffffff;
+  border-radius: var(--radius-round);
+  background-color: var(--color-green);
+  fill: var(--color-white);
 }
 
 .proposal-item-text {
@@ -106,20 +110,20 @@
   width: 100%;
   min-width: 0;
   height: 52px;
-  border-radius: 12px;
+  border-radius: var(--radius-sm);
   padding: 0 14px;
-  background-color: #4dc274;
-  color: #ffffff;
+  background-color: var(--color-green);
+  color: var(--color-white);
   font-size: 12px;
   font-weight: 700;
   line-height: 1.2;
   text-decoration: none;
-  transition: background-color 250ms ease;
+  transition: background-color var(--transition-base);
 }
 
 .proposal-btn:hover,
 .proposal-btn:focus {
-  background-color: #38ae5f;
+  background-color: var(--color-green-hover);
 }
 
 .proposal-books {
@@ -208,17 +212,21 @@
 
 @media only screen and (min-width: 1280px) {
   .proposal-shell {
-    border-radius: 30px;
+    border-radius: var(--radius);
     height: 900px;
     background: transparent;
   }
 
   .proposal-shell::before {
-    content: "";
+    content: '';
     position: absolute;
     inset: 0 -128px;
-    border-radius: 30px;
-    background: linear-gradient(102deg, #4dc274 2%, #bee8cc 100%);
+    border-radius: var(--radius);
+    background: linear-gradient(
+      84.6deg,
+      var(--color-green) 11.41%,
+      var(--color-green-light) 122.11%
+    );
     margin: 0 50px;
   }
 
@@ -247,12 +255,12 @@
   }
 
   .proposal-list {
-    max-width: 520px;
+    max-width: 654px;
   }
 
   .proposal-item {
     margin-bottom: 15px;
-    max-width: 470px;
+    max-width: 654px;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -266,9 +274,9 @@
   }
 
   .proposal-books {
-    right: 32px;
+    right: -7px;
     width: 214px;
     height: 263px;
-    top: 90%;
+    top: 78%;
   }
 }
