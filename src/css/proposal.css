@@ -4,6 +4,7 @@
 
 .proposal-shell {
   position: relative;
+  isolation: isolate;
   overflow: visible;
   border-radius: 18px;
   padding: 40px 16px 20px;
@@ -91,7 +92,11 @@
 
 .proposal-item-icon {
   flex: 0 0 20px;
-  fill: #4dc274;
+  box-sizing: border-box;
+  padding: 4px;
+  border-radius: 50%;
+  background-color: #4dc274;
+  fill: #ffffff;
 }
 
 .proposal-item-text {
@@ -218,6 +223,16 @@
     border-radius: 30px;
     padding: 42px 36px 36px;
     height: 900px;
+    background: transparent;
+  }
+
+  .proposal-shell::before {
+    content: "";
+    position: absolute;
+    inset: 0 -128px;
+    border-radius: 30px;
+    background: linear-gradient(102deg, #4dc274 2%, #bee8cc 100%);
+    margin: 0 50px;
   }
 
   .proposal-title {
@@ -229,7 +244,7 @@
 
   .proposal-cards-bg {
     top: calc(50% + 30px);
-    width: 1050px;
+    width: 1104px;
     height: 463px;
     transform: translate(-50%, -47%);
   }
