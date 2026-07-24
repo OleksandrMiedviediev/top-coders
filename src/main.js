@@ -62,3 +62,23 @@ const initButtonShake = () => {
 };
 
 initButtonShake();
+
+// mobile menu toggle
+const mobileMenu = document.querySelector('.overlay');
+const mobileMenuOpenBtn = document.querySelector('.burger');
+const mobileMenuCloseBtn = document.querySelector('.mobile-menu-close');
+const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+
+mobileMenuOpenBtn.addEventListener('click', () => {
+  mobileMenu.classList.add('is-open');
+});
+
+mobileMenuCloseBtn.addEventListener('click', () => {
+  mobileMenu.classList.remove('is-open');
+});
+
+mobileMenuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('is-open');
+  });
+});
