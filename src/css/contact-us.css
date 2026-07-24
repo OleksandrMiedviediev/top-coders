@@ -11,10 +11,6 @@
   overflow: hidden;
 }
 
-.contact-us {
-  padding: 80px 0;
-}
-
 .contact-us-title {
   margin-bottom: 14px;
   font-weight: 600;
@@ -202,10 +198,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .contact-us {
-    padding: 100px 0;
-  }
-
   .contact-us-title {
     margin-bottom: 16px;
     font-weight: 700;
@@ -267,10 +259,6 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .contact-us {
-    padding: 150px 0;
-  }
-
   .contact-us-text {
     max-width: 709px;
   }

@@ -152,10 +152,6 @@ body {
 
 /* Common ---------------------------- */
 
-.lessons {
-  padding-top: 80px;
-}
-
 .lessons-list {
   display: flex;
   gap: 20px;
@@ -231,10 +227,6 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  .lessons {
-    padding-top: 95px;
-  }
-
   .lessons-list {
     justify-content: start;
     gap: 32px;
@@ -258,10 +250,6 @@ body {
 }
 
 @media only screen and (min-width: 1280px) {
-  .lessons {
-    padding-top: 150px;
-  }
-
   .lesson-card {
     flex: 1 1 0;
     min-width: 0;
