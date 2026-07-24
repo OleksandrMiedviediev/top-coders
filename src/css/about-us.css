@@ -89,11 +89,36 @@
   min-height: 313px;
   border-radius: var(--radius-card);
   background-color: var(--color-green);
+  overflow: hidden;
 }
 
 .about-picture {
   width: 254px;
   height: auto;
+  transform-origin: 50% 70%;
+  animation: about-picture-sway 4.8s ease-in-out infinite;
+}
+
+@keyframes about-picture-sway {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-7deg) scale(1);
+  }
+  25% {
+    transform: translateY(-8px) rotate(4deg) scale(1.03);
+  }
+  50% {
+    transform: translateY(2px) rotate(-5deg) scale(1.06);
+  }
+  75% {
+    transform: translateY(-6px) rotate(5deg) scale(1.09);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-picture {
+    animation: none;
+  }
 }
 
 @media only screen and (min-width: 768px) {
