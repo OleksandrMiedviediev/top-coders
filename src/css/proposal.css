@@ -179,7 +179,6 @@
   }
 
   .proposal-card {
-    width: calc(100% - 10px);
     min-height: 248px;
     padding: 68px 220px 30px 26px;
     top: 50px;
@@ -189,15 +188,11 @@
     font-size: 40px;
   }
 
-  .proposal-list {
-    max-width: 520px;
-  }
-
   .proposal-item {
     margin-bottom: 8px;
-    max-width: 430px;
     font-size: 14px;
     line-height: 1.35;
+    max-width: 300px;
   }
 
   .proposal-item:last-child {
