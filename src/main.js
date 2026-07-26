@@ -33,13 +33,21 @@ ScrollOut({
 const reviewsSwiperElement = document.querySelector('.reviews-swiper');
 
 if (reviewsSwiperElement) {
+  const reviewsSlidesCount =
+    reviewsSwiperElement.querySelectorAll('.swiper-slide').length;
+
   new Swiper(reviewsSwiperElement, {
     modules: [Pagination],
     slidesPerView: 1,
     spaceBetween: 16,
     speed: 500,
+    watchOverflow: true,
+    observer: true,
+    observeParents: true,
+    resizeObserver: true,
+    enabled: reviewsSlidesCount > 1,
     pagination: {
-      el: '.reviews-pagination',
+      el: reviewsSwiperElement.querySelector('.reviews-pagination'),
       clickable: true,
     },
     breakpoints: {
@@ -103,14 +111,17 @@ const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
 
 mobileMenuOpenBtn.addEventListener('click', () => {
   mobileMenu.classList.add('is-open');
+  document.body.classList.add('menu-open');
 });
 
 mobileMenuCloseBtn.addEventListener('click', () => {
   mobileMenu.classList.remove('is-open');
+  document.body.classList.remove('menu-open');
 });
 
 mobileMenuLinks.forEach(link => {
   link.addEventListener('click', () => {
     mobileMenu.classList.remove('is-open');
+    document.body.classList.remove('menu-open');
   });
 });
