@@ -104,26 +104,8 @@
 }
 
 .proposal-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   min-width: 0;
-  height: 52px;
-  border-radius: var(--radius-sm);
-  padding: 0 14px;
-  background-color: var(--color-green);
-  color: var(--color-white);
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.71429;
-  text-decoration: none;
-  transition: background-color var(--transition-base);
-}
-
-.proposal-btn:hover,
-.proposal-btn:focus {
-  background-color: var(--color-green-hover);
 }
 
 .proposal-books {
@@ -198,9 +180,6 @@
   .proposal-btn {
     width: auto;
     min-width: 150px;
-    padding: 16px 64px;
-    line-height: 1.55556;
-    font-size: 18px;
   }
 
   .proposal-books {

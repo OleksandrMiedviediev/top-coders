@@ -145,30 +145,12 @@
 
 .hero-btn {
   width: 100%;
-  text-align: center;
-  display: inline-block;
-  padding: 20px 0;
-  border-radius: var(--radius-sm);
-  background-color: var(--color-green);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.71429;
-  color: var(--color-white);
-  transition: background-color var(--transition-base);
 }
 
 @media (min-width: 768px) {
   .hero-btn {
     max-width: 306px;
-    padding: 16px 64px;
-    font-size: 18px;
-    line-height: 1.55556;
   }
-}
-
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: var(--color-green-hover);
 }
 
 .scroll-down {
