@@ -114,9 +114,9 @@
   padding: 0 14px;
   background-color: var(--color-green);
   color: var(--color-white);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.71429;
   text-decoration: none;
   transition: background-color var(--transition-base);
 }
@@ -188,7 +188,7 @@
     margin-bottom: 8px;
     font-size: 14px;
     line-height: 1.35;
-    max-width: 300px;
+    max-width: 451px;
   }
 
   .proposal-item:last-child {
@@ -198,6 +198,9 @@
   .proposal-btn {
     width: auto;
     min-width: 150px;
+    padding: 16px 64px;
+    line-height: 1.55556;
+    font-size: 18px;
   }
 
   .proposal-books {
@@ -270,8 +273,6 @@
 
   .proposal-btn {
     min-width: 165px;
-    padding: 16px 64px;
-    font-size: 18px;
   }
 
   .proposal-books {
