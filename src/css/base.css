@@ -24,6 +24,7 @@ body {
   min-height: 100vh;
   margin: 0;
   color: var(--color-text);
+  overflow-x: hidden;
 }
 
 main {

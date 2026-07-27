@@ -11,34 +11,8 @@
   overflow: hidden;
 }
 
-.contact-us-title {
-  margin-bottom: 14px;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 1.12;
-  letter-spacing: -0.02em;
-  text-align: center;
-  color: var(--color-text);
-}
-
-.contact-us-title-accent {
-  display: inline;
-  border-radius: 8px;
-  background: linear-gradient(
-    180deg,
-    transparent 62%,
-    var(--color-green-light) 62%
-  );
-}
-
 .contact-us-text {
-  margin: 0 auto 20px;
   max-width: 335px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  text-align: center;
-  color: var(--color-muted);
 }
 
 .contact-us-promo {
@@ -171,23 +145,9 @@
 }
 
 .contact-us-btn {
-  display: block;
+  display: flex;
   width: 100%;
   margin-bottom: 16px;
-  padding: 14px 0;
-  border: none;
-  border-radius: var(--radius-sm);
-  background-color: var(--color-green);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--color-white);
-  transition: background-color var(--transition-base);
-}
-
-.contact-us-btn:hover,
-.contact-us-btn:focus {
-  background-color: var(--color-green-hover);
 }
 
 .contact-us-policy {
@@ -203,18 +163,8 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .contact-us-title {
-    margin-bottom: 16px;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.2;
-  }
-
   .contact-us-text {
-    margin-bottom: 64px;
     max-width: 586px;
-    font-size: 16px;
-    line-height: 1.5;
   }
 
   .contact-us-form {
@@ -249,12 +199,6 @@
   .contact-us-radio-label {
     font-size: 18px;
     line-height: 1.33;
-  }
-
-  .contact-us-btn {
-    padding: 16px 0;
-    font-size: 18px;
-    line-height: 1.56;
   }
 
   .contact-us-policy {
