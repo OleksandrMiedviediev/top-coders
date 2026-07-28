@@ -41,3 +41,10 @@ JavaScript.
 - Max - Developer
 - Yuliia Koliesnik - Developer
 - Даніїл Кухар - Developer
+
+## Scripts
+
+- `npm install` - встановити залежності
+- `npm run dev` - запустити локальний сервер розробки
+- `npm run build` - зібрати production-версію проєкту
+- `npm run preview` - переглянути зібрану версію локально
